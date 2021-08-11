@@ -19,7 +19,6 @@ D:\CiaCard\Estudo\DDD_2020\DDD2020\Presentation\Entities\obj\Debug\netcoreapp3.1
 D:\CiaCard\Estudo\DDD1\DDD1\Presentation\Entities\bin\Debug\netcoreapp3.1\Entities.deps.json
 D:\CiaCard\Estudo\DDD1\DDD1\Presentation\Entities\bin\Debug\netcoreapp3.1\Entities.dll
 D:\CiaCard\Estudo\DDD1\DDD1\Presentation\Entities\bin\Debug\netcoreapp3.1\Entities.pdb
-D:\CiaCard\Estudo\DDD1\DDD1\Presentation\Entities\obj\Debug\netcoreapp3.1\Entities.csproj.AssemblyReference.cache
 D:\CiaCard\Estudo\DDD1\DDD1\Presentation\Entities\obj\Debug\netcoreapp3.1\Entities.GeneratedMSBuildEditorConfig.editorconfig
 D:\CiaCard\Estudo\DDD1\DDD1\Presentation\Entities\obj\Debug\netcoreapp3.1\Entities.AssemblyInfoInputs.cache
 D:\CiaCard\Estudo\DDD1\DDD1\Presentation\Entities\obj\Debug\netcoreapp3.1\Entities.AssemblyInfo.cs

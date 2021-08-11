@@ -1,5 +1,6 @@
 ﻿using ApplicationApp.Interfaces;
 using Domain.Interfaces.InterfaceProduct;
+using Domain.Interfaces.InterfaceServices;
 using Entities.Entities;
 using System;
 using System.Collections.Generic;
@@ -11,9 +12,12 @@ namespace ApplicationApp.OpenApp
     public class AppProduct : InterfaceProductApp
     {
         IProduct _IProduct;
-        public AppProduct(IProduct IProduct)
+        IServiceProduct _IServiceProduct;
+
+        public AppProduct(IProduct IProduct, IServiceProduct IServiceProduct)
         {
             _IProduct = IProduct;
+            _IServiceProduct = IServiceProduct;
         }
 
         public async Task Add(Product Objeto)
@@ -40,5 +44,17 @@ namespace ApplicationApp.OpenApp
         {
             await _IProduct.Update(Objeto);
         }
+
+        #region Metodos customizados
+        public async Task AddProduct(Product product)
+        {
+            await _IServiceProduct.AddProduct(product);
+        }
+
+        public async Task UpdateProduct(Product product)
+        {
+            await _IServiceProduct.UpdateProduct(product);
+        }
+        #endregion
     }
 }

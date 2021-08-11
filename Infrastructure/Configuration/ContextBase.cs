@@ -26,7 +26,7 @@ namespace Infrastructure.Configuration
 
         private string GetStringConectionConfig()
         {
-            string strCon = "Data Source=DESKTOP-HVNTI80\\DESENVOLVIMENTO;Initial Catalog=DDD_2020_AULA;Integrated Security=False;User ID=sa;Password=1234;Connect Timeout=15;Encrypt=False;TrustServerCertificate=False";
+            string strCon = "Data Source=DESKTOP-MTD116I;Initial Catalog=BancoReal;Integrated Security=True;Connect Timeout=15;Trusted_Connection=Yes;";
             return strCon;
         }
 
