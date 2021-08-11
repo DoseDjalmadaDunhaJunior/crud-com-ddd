@@ -10,6 +10,12 @@ using System.Threading.Tasks;
 
 namespace Infrastructure.Repository.Generics
 {
+
+    /// <summary>
+    /// Ao dar o Ctrl + . no IGeneric ele ja implementa a interface abaixo
+    /// Essa parte de forma geral salva apenas o geral e não o produto
+    /// </summary>
+    /// <typeparam name="T"></typeparam>
     public class RepositoryGenerics<T> : IGeneric<T>, IDisposable where T : class
     {
 
@@ -19,6 +25,14 @@ namespace Infrastructure.Repository.Generics
         {
             _OptionsBuilder = new DbContextOptions<ContextBase>();
         }
+
+
+        /// <summary>
+        /// as funções async são assincronas 
+        /// </summary>
+        /// <param name="Objeto"></param>
+        /// <returns></returns>
+        /// 
 
         public async Task Add(T Objeto)
         {
@@ -65,7 +79,10 @@ namespace Infrastructure.Repository.Generics
 
 
 
-
+        /// <summary>
+        /// tudo que esta abaixo esta no site da microsoft, foi um (ctrl + c) + (ctrl + v) 
+        /// </summary>
+        /// 
         #region Disposed https://docs.microsoft.com/pt-br/dotnet/standard/garbage-collection/implementing-dispose
         // Flag: Has Dispose already been called?
         bool disposed = false;

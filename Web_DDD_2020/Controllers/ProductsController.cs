@@ -9,6 +9,12 @@ using Entities.Entities;
 using Infrastructure.Configuration;
 using ApplicationApp.Interfaces;
 
+/// <summary>
+/// Foi um controlador MVC usando Entity Framework
+/// Modelo Product: (Entities.Entities)
+/// Contexto: ContextBase (Infraestruture.Configuration)
+/// </summary>
+/// 
 namespace Web_DDD_2020.Controllers
 {
 

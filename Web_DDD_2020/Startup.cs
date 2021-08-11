@@ -27,13 +27,21 @@ namespace Web_DDD_2020
 
         public IConfiguration Configuration { get; }
 
+        /// <summary>
+        /// Essa função abaixo é para injetar as dependencias
+        /// </summary>
+        /// <param name="services"></param>
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddSingleton(typeof(IGeneric<>), typeof(RepositoryGenerics<>));
+            //comunicação do IProduct com o RepositoryProduct
             services.AddSingleton<IProduct, RepositoryProduct>();
+
+            //é a comunicação da interface com a aplication
             services.AddSingleton<InterfaceProductApp, AppProduct>();
 
+            //é a comunicação do IServiceProduct com o ServiceProduto
             services.AddSingleton<IServiceProduct, ServiceProduto>();
 
             services.AddControllersWithViews();

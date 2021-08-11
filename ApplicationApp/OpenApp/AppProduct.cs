@@ -9,11 +9,24 @@ using System.Threading.Tasks;
 
 namespace ApplicationApp.OpenApp
 {
+
+    /// <summary>
+    /// Essa classe tenta fazer a comunicação do dominio com a aplication
+    /// A interface foi implementada com o (Ctrl + .)
+    /// </summary>
     public class AppProduct : InterfaceProductApp
     {
+        /// <summary>
+        /// O IProduct e o IServiceProduct são as interfacse no domain
+        /// </summary>
         IProduct _IProduct;
         IServiceProduct _IServiceProduct;
 
+        /// <summary>
+        /// Essa função abaixo é o construtor
+        /// </summary>
+        /// <param name="IProduct"></param>
+        /// <param name="IServiceProduct"></param>
         public AppProduct(IProduct IProduct, IServiceProduct IServiceProduct)
         {
             _IProduct = IProduct;
