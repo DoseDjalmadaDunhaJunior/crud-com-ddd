@@ -13,6 +13,8 @@ namespace ApplicationApp.OpenApp
     /// <summary>
     /// Essa classe tenta fazer a comunicação do dominio com a aplication
     /// A interface foi implementada com o (Ctrl + .)
+    /// Praticamente todas as funções tem que ser async
+    /// dentro dessas funções async elas tem que ter um aweit
     /// </summary>
     public class AppProduct : InterfaceProductApp
     {

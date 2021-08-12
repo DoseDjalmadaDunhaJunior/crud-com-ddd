@@ -1,9 +1,13 @@
 ﻿<!DOCTYPE html>
+<!--
+Como o proprio nome dessa pagina ja fala esse é um leyout
+    Ele ja é gerado automaticamente ao gerar o arquivo WEB
+-->
 <html lang="en">
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>@ViewData["Title"] - Web_DDD_2020</title>
+    <title>@ViewData["Title"] - Crud com DDD</title>
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" />
 </head>
@@ -11,18 +15,20 @@
     <header>
         <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
             <div class="container">
-                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">Web_DDD_2020</a>
+                <!--Essa 1ª linha abaixo é responsavel pelo nome grande que fica no topo da pagina-->
+                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">CRUD com DDD</a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent"
                         aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="navbar-collapse collapse d-sm-inline-flex flex-sm-row-reverse">
                     <ul class="navbar-nav flex-grow-1">
+                        <!--Esses dois <a class... > abaixo são onde ficam as informações acima, podemos mudar o nome ou remover um facilmente-->
                         <li class="nav-item">
                             <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Products" asp-action="Index">Products</a>
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Products" asp-action="Index">Produtos</a>
                         </li>
                     </ul>
                 </div>

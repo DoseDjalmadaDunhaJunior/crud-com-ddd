@@ -21,6 +21,13 @@ namespace Entities.Notifications
         [NotMapped]
         public List<Notifies> Notitycoes;
 
+        /// <summary>
+        /// A função abaixo gera a notificação para o usuario ser obrigado a colocar 
+        /// a descrição do produto
+        /// </summary>
+        /// <param name="valor"></param>
+        /// <param name="nomePropriedade"></param>
+        /// <returns></returns>
         public bool ValidarPropriedadeString(string valor, string nomePropriedade)
         {
 
@@ -34,10 +41,16 @@ namespace Entities.Notifications
 
                 return false;
             }
-
             return true;
         }
 
+        /// <summary>
+        /// a função abaixo gera a notificação pçara o usuario que o campo valor deve ser maior que zero
+        /// 
+        /// </summary>
+        /// <param name="valor"></param>
+        /// <param name="nomePropriedade"></param>
+        /// <returns></returns>
         public bool ValidarPropriedadeInt(int valor, string nomePropriedade)
         {
 
@@ -55,6 +68,14 @@ namespace Entities.Notifications
             return true;
 
         }
+
+        /// <summary>
+        /// a função abaixo gera a notificação pçara o usuario que o campo valor deve ser maior que zero
+        /// a diferença com o de cima é que esse abrange a parte decimal
+        /// </summary>
+        /// <param name="valor"></param>
+        /// <param name="nomePropriedade"></param>
+        /// <returns></returns>
 
         public bool ValidarPropriedadeDecimal(decimal valor, string nomePropriedade)
         {

@@ -65,10 +65,10 @@ namespace Web_DDD_2020.Controllers
         {
             if (ModelState.IsValid)
             {
-                //await _InterfaceProductApp.Add(product);
 
                 await _InterfaceProductApp.AddProduct(product);
 
+                // o if abaixo ele lista todas as notificações que tiver e se tiver
                 if (product.Notitycoes.Any())
                 {
                     foreach (var item in product.Notitycoes)
@@ -78,9 +78,7 @@ namespace Web_DDD_2020.Controllers
 
                     return View("Create", product);
                 }
-                //return RedirectToAction(nameof(Index));
             }
-            //return View(product);
             return RedirectToAction(nameof(Index));
         }
 
@@ -116,7 +114,7 @@ namespace Web_DDD_2020.Controllers
             {
                 try
                 {
-                    //await _InterfaceProductApp.Update(product);
+                    //aqui as coisas são parecidas com o create, com suas respectivas peculiaridades mas basicamente é um ((ctrl + c) + (ctrl + v))
 
                     await _InterfaceProductApp.UpdateProduct(product);
 
@@ -126,7 +124,7 @@ namespace Web_DDD_2020.Controllers
                         {
                             ModelState.AddModelError(item.NomePropriedade, item.mensagem);
                         }
-
+                        // a diferença fica aqui, em vez de craate é edit
                         return View("Edit", product);
 
                     }
